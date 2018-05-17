@@ -3,10 +3,10 @@ session_start();
 error_reporting(0);
 include('includes/config.php');
 if(strlen($_SESSION['alogin'])==0)
-	{	
+	{
 header('location:index.php');
 }
-else{ 
+else{
 
 if(isset($_POST['submit']))
   {
@@ -72,7 +72,7 @@ $msg="Data updated successfully";
 	<meta name="description" content="">
 	<meta name="author" content="">
 	<meta name="theme-color" content="#3e454c">
-	
+
 	<title>Car Rental Portal | Admin Edit Vehicle Info</title>
 
 	<!-- Font awesome -->
@@ -120,7 +120,7 @@ $msg="Data updated successfully";
 
 				<div class="row">
 					<div class="col-md-12">
-					
+
 						<h2 class="page-title">Edit Vehicle</h2>
 
 						<div class="row">
@@ -129,7 +129,7 @@ $msg="Data updated successfully";
 									<div class="panel-heading">Basic Info</div>
 									<div class="panel-body">
 <?php if($msg){?><div class="succWrap"><strong>SUCCESS</strong>:<?php echo htmlentities($msg); ?> </div><?php } ?>
-<?php 
+<?php
 $id=intval($_GET['id']);
 $sql ="SELECT tblvehicles.*,tblbrands.BrandName,tblbrands.id as bid from tblvehicles join tblbrands on tblbrands.id=tblvehicles.VehiclesBrand where tblvehicles.id=:id";
 $query = $dbh -> prepare($sql);
@@ -172,7 +172,7 @@ continue;
 </select>
 </div>
 </div>
-											
+
 <div class="hr-dashed"></div>
 <div class="form-group">
 <label class="col-sm-2 control-label">Vehical Overview<span style="color:red">*</span></label>
@@ -191,9 +191,9 @@ continue;
 <select class="selectpicker" name="fueltype" required>
 <option value="<?php echo htmlentities($results->FuelType);?>"> <?php echo htmlentities($result->FuelType);?> </option>
 
-<option value="Petrol">Petrol</option>
-<option value="Diesel">Diesel</option>
-<option value="CNG">CNG</option>
+<option value="Bensin">Bensin</option>
+<option value="Solar">Solar</option>
+<option value="Pertamax">Pertamax</option>
 </select>
 </div>
 </div>
@@ -209,7 +209,7 @@ continue;
 <input type="text" name="seatingcapacity" class="form-control" value="<?php echo htmlentities($result->SeatingCapacity);?>" required>
 </div>
 </div>
-<div class="hr-dashed"></div>								
+<div class="hr-dashed"></div>
 <div class="form-group">
 <div class="col-sm-12">
 <h4><b>Vehicle Images</b></h4>
@@ -250,13 +250,13 @@ echo htmlentities("File not available");
 </div>
 
 </div>
-<div class="hr-dashed"></div>									
+<div class="hr-dashed"></div>
 </div>
 </div>
 </div>
 </div>
-	
-							
+
+
 
 <div class="row">
 <div class="col-md-12">
@@ -455,7 +455,7 @@ echo htmlentities("File not available");
 
 											<div class="form-group">
 												<div class="col-sm-8 col-sm-offset-2" >
-													
+
 													<button class="btn btn-primary" name="submit" type="submit" style="margin-top:4%">Save changes</button>
 												</div>
 											</div>
@@ -465,13 +465,13 @@ echo htmlentities("File not available");
 								</div>
 							</div>
 						</div>
-						
-					
+
+
 
 					</div>
 				</div>
-				
-			
+
+
 
 			</div>
 		</div>
