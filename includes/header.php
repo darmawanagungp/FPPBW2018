@@ -4,6 +4,7 @@
     <div class="container">
       <div class="row">
         <div class="col-sm-3 col-md-2">
+          <h3>Rental Edi</h3>
           <!-- <div class="logo"> <a href="index.php"><img src="assets/images/logoutama.png" alt="image"/></a> </div> -->
         </div>
         <div class="col-sm-9 col-md-10">
