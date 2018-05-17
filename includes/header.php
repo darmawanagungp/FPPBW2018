@@ -95,10 +95,10 @@ foreach($results as $result)
         <ul class="nav navbar-nav">
           <li><a href="index.php">Home</a>    </li>
 
-          <li><a href="page.php?type=aboutus">About Us</a></li>
-          <li><a href="car-listing.php">Car Listing</a>
+          <li><a href="page.php?type=aboutus">Tentang Kami</a></li>
+          <li><a href="car-listing.php">Daftar Mobil</a>
           <li><a href="page.php?type=faqs">FAQs</a></li>
-          <li><a href="contact-us.php">Contact Us</a></li>
+          <li><a href="contact-us.php">Hubungi Kami</a></li>
 
         </ul>
       </div>
